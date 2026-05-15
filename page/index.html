@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfeuille - Gestion depenses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <main id="container">
+      <!--Ecran d'accueil-->
+      <div id="ecran-accueil" class="ecran">
+        <!-- Espace Profil utilisateur -->
+        <section id="espace-compte">
+          <div id="nom-utilisateur">
+            <p>Fleury Taty</p>
+          </div>
+          <div id="image-profil">
+            <img
+              src="../image/nano-banana-2_Améliore_cette_photo_de_portrait_pour_une_utilisation_en_photo_de_profil_profes-0.jpg"
+              alt="photo de profil"
+            />
+          </div>
+        </section>
+
+        <!--Espace solde budget & depense-->
+        <section id="espace-solde">
+          <div class="solde-budget">
+            <p>Solde budget</p>
+            <h3>10.000 <span>FCFA</span></h3>
+          </div>
+          <div class="solde-depense">
+            <p>Solde dépense</p>
+            <h3>4.000 <span>FCFA</span></h3>
+          </div>
+        </section>
+
+        <!-- Bouton pour ajouter un budget -->
+        <div id="bouton-ajouter-budget">
+          <button class="ajouter-budget">
+            <p>Ajouter budget</p>
+            <span class="fa-solid fa-plus"></span>
+          </button>
+        </div>
+
+        <!-- Espace filtre depense & liste de toutes les depenses -->
+        <section id="espace-depense">
+          <div id="filtre-depense">
+            <h3>Mes dépenses</h3>
+            <div class="filtres">
+                <h3>Filtre</h3>
+              <select id="options-filtre-depense">
+                <option data-filtre="Tous" value="Tous">Tous</option>
+                <option data-filtre="Nourriture" value="Nourriture">
+                  Nourriture
+                </option>
+                <option data-filtre="Santé" value="Santé">Santé</option>
+                <option data-filtre="Loisirs" value="Loisirs">Loisirs</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Liste des depenses -->
+          <div id="liste-depenses"></div>
+        </section>
+      </div>
+
+      <!-- Ecran d'ajout d'une depense -->
+      <div id="ecran-ajout-depense" class="ecran">
+        <!-- Formulaire d'ajout de depense-->
+        <section id="form-ajout-depense">
+          <div class="input-nom-depense">
+            <p>Nom dépense</p>
+            <input type="text" id="nom-depense" placeholder="Resto le cactus" />
+          </div>
+
+          <div class="input-montant-depense">
+            <p>Montant dépense</p>
+            <input type="number" id="montant-depense" placeholder="4000" />
+          </div>
+
+          <div class="input-categories-depense">
+            <p>Catégories dépense</p>
+
+            <select id="options-categories-depense">
+              <option value="Tous">Tous</option>
+              <option value="Nourriture">Nourriture</option>
+              <option value="Santé">Santé</option>
+              <option value="Loisirs">Loisirs</option>
+            </select>
+          </div>
+
+          <!--Bouton ajouter la depense -->
+          <div id="bouton-ajouter">
+            <button class="ajouter-depense">Ajouter depense</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
