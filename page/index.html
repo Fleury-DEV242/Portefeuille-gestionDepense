@@ -50,18 +50,21 @@
         <!-- Espace filtre depense & liste de toutes les depenses -->
         <section id="espace-depense">
           <div id="filtre-depense">
-            <h3>Mes dépenses</h3>
             <div class="filtres">
-              <h3>Filtre</h3>
-              <select id="options-filtre-depense">
-                <option data-filtre="Tous" value="Tous">Tous</option>
-                <option data-filtre="Nourriture" value="Nourriture">
+              <div id="bouton-filtre-content">
+                <button class="bouton-filtre active" data-filtre="tous">
+                  Tous
+                </button>
+                <button class="bouton-filtre" data-filtre="nourriture">
                   Nourriture
-                </option>
-                <option data-filtre="Santé" value="Santé">Santé</option>
-                <option data-filtre="Loisirs" value="Loisirs">Loisirs</option>
-              </select>
+                </button>
+                <button class="bouton-filtre" data-filtre="sante">Santé</button>
+                <button class="bouton-filtre" data-filtre="loisirs">
+                  Loisirs
+                </button>
+              </div>
             </div>
+            <h3>Mes dépenses</h3>
           </div>
 
           <!-- Liste des depenses -->

@@ -13,6 +13,7 @@
 }
 #container #ecran-accueil {
   width: 100%;
+  height: 100vh;
 }
 
 #container #espace-compte {
@@ -23,6 +24,7 @@
   flex-direction: row;
   padding-inline: 10px;
   padding-block: 10px;
+  border-radius: 0px 0px 10px 10px;
   box-shadow: 0px 0px 5px #c0c0c0;
 }
 #container #image-profil {
@@ -35,26 +37,59 @@
   height: 100%;
   border-radius: 50%;
 }
-#container #espace-solde{
-    color: #faf9f6;
-    background: #0189ff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 20px;
-    margin-inline: 3px;
-    padding-block: 25px;
-    padding-inline: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #00549d;
+#container #espace-solde {
+  color: #faf9f6;
+  background: #0189ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-inline: 3px;
+  padding-block: 25px;
+  padding-inline: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #00549d;
 }
-#espace-solde .solde .devise{
-    color: #faf9f6;
-    font-size: 15px;
+#espace-solde .solde .devise {
+  color: #e6e6e6;
+  font-size: 15px;
 }
-#container #bouton-ajouter-budget button{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+#container #bouton-ajouter-budget{
+  margin-top: 10px;
+}
+#container #bouton-ajouter-budget button {
+  width: 99%;
+  background: #0189ff;
+  color: #faf9f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 8px 0px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#espace-depense{
+  background: #faf9f6;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-inline: 5px;
+}
+#espace-depense .filtres #bouton-filtre-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#espace-depense #bouton-filtre-content button{
+  background: #0066bf;
+  color: #faf9f6;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #0189ff;
+  cursor: pointer;
 }
